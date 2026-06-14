@@ -1,11 +1,8 @@
 cask "ani-desk" do
-  arch arm: "aarch64", intel: "x64"
-
   version "1.0.0"
-  sha256 arm:   "a449ee1585aa87bfb2baafd365722d999900d68b1bf2636d7e7b25d5d3ea31a7",
-         intel: "ff5b502a0fca17d5194dc43db7e6e23308efd9e5e20cc7582e60dad314346207"
+  sha256 "e48094b6d63ac94c72a699ffb4d64afd2253728d68a57af3579db2d724267ff3"
 
-  url "https://github.com/silent9669/ani-desk/releases/download/v#{version}/ani-desk_#{version}_#{arch}.dmg"
+  url "https://github.com/silent9669/ani-desk/releases/download/v#{version}/ani-desk_#{version}_aarch64.dmg"
   name "ani-desk"
   desc "Netflix-inspired desktop app for anime streaming"
   homepage "https://github.com/silent9669/ani-desk"
@@ -15,7 +12,8 @@ cask "ani-desk" do
     strategy :github_latest
   end
 
-  depends_on :macos
+  depends_on arch: :arm64
+  depends_on macos: ">= :sequoia"
 
   app "ani-desk.app"
 
