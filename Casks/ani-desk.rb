@@ -1,6 +1,6 @@
 cask "ani-desk" do
-  version "1.0.0"
-  sha256 "3e90068d4ad0d858b13d8dc99b7bc9c0d225a6c2096f175140f5d6a8d6ba387b"
+  version "1.0.1"
+  sha256 "8b1bd4e8be224318baf6092ebf3d7cafbb56f5956e5fd7664c79384d5c06584b"
 
   url "https://github.com/silent9669/ani-desk/releases/download/v#{version}/ani-desk_#{version}_aarch64.dmg"
   name "ani-desk"
@@ -24,8 +24,8 @@ cask "ani-desk" do
   ]
 
   caveats <<~EOS
-    ani-desk v1.0 artifacts are unsigned. If macOS blocks the first launch,
-    open System Settings > Privacy & Security and allow ani-desk.
+    ani-desk artifacts are unsigned. If macOS blocks the first launch, run:
+      xattr -cr /Applications/ani-desk.app
 
     mpv is optional for fallback playback:
       brew install mpv
