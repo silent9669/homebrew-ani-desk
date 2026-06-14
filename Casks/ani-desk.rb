@@ -1,6 +1,6 @@
 cask "ani-desk" do
   version "1.0.0"
-  sha256 "e48094b6d63ac94c72a699ffb4d64afd2253728d68a57af3579db2d724267ff3"
+  sha256 "3e90068d4ad0d858b13d8dc99b7bc9c0d225a6c2096f175140f5d6a8d6ba387b"
 
   url "https://github.com/silent9669/ani-desk/releases/download/v#{version}/ani-desk_#{version}_aarch64.dmg"
   name "ani-desk"
@@ -13,7 +13,7 @@ cask "ani-desk" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "ani-desk.app"
 
