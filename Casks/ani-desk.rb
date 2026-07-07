@@ -1,6 +1,6 @@
 cask "ani-desk" do
   version "1.0.5"
-  sha256 "12ba3a98ff495237f2564d77a7b160ec140363c3335df349557ce12f2ace8ed1"
+  sha256 "43a3e43ab6a143948983918b37fb25f346578420ef7ab93399db6bdbd0580355"
 
   url "https://github.com/silent9669/ani-desk/releases/download/v#{version}/ani-desk_#{version}_aarch64.dmg"
   name "ani-desk"
